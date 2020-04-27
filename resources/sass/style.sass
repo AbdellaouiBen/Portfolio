@@ -1,0 +1,332 @@
+body 
+    background-color: $body-bg
+    padding: 0
+    margin: 0
+section 
+    padding: 60px
+.g
+    background-color: $bg-clair
+.bt
+    height: 20px
+    margin-left: 18%
+    width: 82%
+    background-color: $color-dark
+    position: sticky
+    z-index: 1000
+    top: 0
+.bb
+    height: 20px
+    margin-left: 18%
+    width: 82%
+    background-color: $color-dark
+    position: absolute
+    z-index: 1000
+    top: 90vh
+.br
+    height: 100vh
+    width: 20px
+    background-color: $color-dark
+    position: fixed
+    right: 0
+
+/* plus */
+.btn-outline-color-light 
+    color: $color-light
+    border-color: $color-light
+
+
+.btn-outline-color-light:hover 
+    color: $color-blue-light
+    background-color: $color-light
+    border-color: $color-blue-light
+
+
+.btn-outline-color-light:focus,.btn-outline-color-light.focus 
+    box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.5)
+
+//  header
+header
+    width: 18%
+    height: 100vh
+    background-color: $color-dark
+    position: fixed
+    left: 0
+    top: 0
+    a  
+        color: $color-light
+        &:hover 
+            color:  #F0E6A6
+    .profil
+        text-align: center
+        img
+            margin-top: 5vh
+            width: 60%
+        .nav-name
+            padding: 20px
+            text-align: center
+            a
+                text-decoration: none
+        .nav-social
+            margin: 20px 0 0
+            text-align: center
+            a  
+                text-decoration: none
+                background-color: #494949
+                padding: 3px 8px 
+                margin: 10px
+                border-radius: 100%
+    .side-navbar
+        padding: 20px 0
+        display: flex
+        flex-direction: column
+        a 
+            padding: 20px 0 0 50px
+            text-decoration: none
+            font-size: 20px
+    .nav-footer
+        text-align: center
+        position: absolute
+        bottom: 10px
+        width: 80%
+        a
+            text-decoration: none
+// corps
+.corps
+    margin-left: 18%
+    width: 82%
+.header-corps
+    height: 100vh
+    /* image by orangechen on unsplash*/
+    background-image: url("public/storage/orange-chen-unsplash.jpg")
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    .header-corps-text
+        margin-left: 100px
+        .header-corps-name
+            margin-top: -20px
+            font-size: 64px
+            font-weight: 700
+            line-height: 56px
+            
+            background: -webkit-linear-gradient( 275deg, $color-light,$color-light,$color-light, #3b3b3b, #3b3b3b, #e6e6e6)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+        .header-corps-typewrite
+            font-size: 64px
+            font-weight: 700
+            background: -webkit-linear-gradient( 85deg, $color-light,$color-light,$color-light, #3b3b3b, #3b3b3b, #e6e6e6)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+
+// title
+.title
+    padding-bottom: 20px 
+    h2 
+        font-size: 32px
+        font-weight: bold
+        margin-bottom: 20px
+        padding-bottom: 20px
+        position: relative
+        color: $color-dark 
+        &:after
+            content: ''
+            position: absolute
+            display: block
+            width: 50px
+            height: 3px
+            background: $color-light
+            bottom: 0
+            left: 0
+    p      
+        width: 85%
+        line-height: 25px
+        font-size: 20px   
+// About
+#about
+
+.about-arrow
+    font-size: 20px
+    line-height: 50px
+    &:before
+        margin-right: 30px
+        font-family: "Font Awesome 5 Free" 
+        font-weight: 900 
+        content: "\f35a"
+        color: $color-light
+.about-content-text
+    font-size: 15px
+//skills
+#skills
+.progress
+    background-color: $color-light
+.progress-bar
+    background-color: $color-dark
+              
+        
+//resume
+
+.resume-block
+    border-left: 1px $color-dark solid
+    &:before 
+        content: ""
+        position: absolute
+        width: 16px
+        height: 16px
+        border-radius: 50px
+        left: -9px
+        top: 0
+        background: #fff
+        border: 2px solid $color-blue-light
+    &:hover
+        border-left: 1px $color-light solid
+        &:before 
+            transition-duration: 0.5s
+            background: $color-blue-light
+            border: 2px solid $color-light
+
+//portfolio
+#portfolio
+.projet-div
+    display: flex 
+    justify-content: center 
+    margin: 15px 0
+.projet
+    padding: 20px 
+    box-shadow: 2px 2px 15px 13px $color-dark 
+    background-size: 100%
+    background-repeat: no-repeat 
+    height: 300px
+    width: 70%
+    position: relative
+    transition: 6s linear 
+    overflow: hidden
+    border-radius: 0 40px 
+    &:hover
+        background-position-y: 100% 
+        .learnMore
+            left: 0
+            top: 0 
+.learnMore
+    position: absolute 
+    top: 0
+    left: -100%
+    background-color: $color-light-opacity  
+    padding: 0 
+    width: 100%
+    height: 100%
+    display: flex 
+    justify-content: center
+    align-items: center 
+    transition: 1s all 
+    border-radius:  0 40px
+    button
+        text-decoration: none
+        padding: 5px
+        background-color:  $color-dark-opacity 
+        color: $color-light  
+        opacity: 100 
+        &:hover 
+            background-color:  $color-light 
+            color: $color-dark 
+
+    //modal
+.modal-portfolio
+    h2 
+        font-size: 32px
+        font-weight: bold
+        margin: 40px 0
+        padding-bottom: 20px
+        position: relative
+        color: $color-blue-light 
+        &:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 3px
+            background: $color-light
+            bottom: 0
+            left: 0
+    p
+        span 
+            font-weight: bold
+
+
+// contact
+.contact-left
+    .ligne-icon
+        color: #000
+        div 
+            padding: 10px 
+            transition: 2s ease
+            border: 0px solid $color-light
+            span 
+                float: right
+                transition: 2s ease
+            i 
+                transition: 2s ease
+            &:hover
+                background-color: #cfcfcf
+                border: 5px solid $color-light
+                i 
+                    color: $color-light
+                    font-size: 20px
+                span 
+                    font-size: 17px 
+
+.contact-right
+    h3
+        font-size: 32px
+        font-weight: bold
+        margin-bottom: 10px
+        padding-bottom: 10px
+        position: relative
+        color: $color-dark 
+        text-decoration: underline $color-light 
+    form 
+        width: 60%
+        .form-group
+            padding: 0
+            margin: 5px 0
+
+
+// footer
+#footer
+    height: 200px
+    margin-left: 18%
+    width: 82%  
+    background-color: $color-dark
+    bottom: 0
+    display: flex 
+    justify-content: center
+    align-items: center 
+    h2
+        color: $color-light
+
+// bonus
+.bonus
+    height: 200px
+    width: 100%
+    background-color: $color-dark
+    bottom: 0
+    display: flex 
+    justify-content: center
+    align-items: center 
+    h2
+        color: $color-light
+        font-size: 50px
+    &:hover
+        .va
+            background-color: #000
+        
+    
+
+
+
+
+
+    
+
+
+    
